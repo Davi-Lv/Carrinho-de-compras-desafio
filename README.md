@@ -1,5 +1,7 @@
 
 # Carrinho de compras - Desafio
+![image](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/assets/85120918/89a6e095-f745-48b4-b118-b5f23bcf9c56)
+
 
 [![React Native](https://img.shields.io/badge/React%20Native-0.66.3-blue)](https://reactnative.dev/)
 [![Context API](https://img.shields.io/badge/Context%20API-17.0.2-green)](https://pt-br.reactjs.org/docs/context.html)
