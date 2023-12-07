@@ -6,7 +6,7 @@
 [![React Native](https://img.shields.io/badge/React%20Native-0.66.3-blue)](https://reactnative.dev/)
 [![Context API](https://img.shields.io/badge/Context%20API-17.0.2-green)](https://pt-br.reactjs.org/docs/context.html)
 
-Este é um aplicativo para listar produtos e adicionar no carrinho de compra, desenvolvido em React Native. Ele foi criado como um desafio para avaliar o meu potencial como desenvolvedor.
+Este é um aplicativo para listar produtos e adicionar no carrinho de compras, desenvolvido em React Native. Ele foi criado como um desafio para avaliar o meu potencial como desenvolvedor.
 
 ## Introdução
 
@@ -64,7 +64,7 @@ Para mais detalhes sobre o projeto, consulte os seguintes arquivos e páginas:
 - [App.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/App.js): o arquivo principal do aplicativo, que contém a navegação entre as telas e o provedor do contexto global.
 - [src/context/ProductsContext.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/context/ProductsContext.js): o arquivo que define o contexto global dos produtos e do carrinho, com as funções para adicionar, remover e atualizar os itens.
 - [src/screens/ProductsScreen.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/screens/ProductsScreen.js): o arquivo que define a tela de produtos, com a lista de produtos.
-- [src/screens/ProductsScreen.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/screens/ProductDetails.js): o arquivo que contem mais detalhes do produto selecionado com os botões para adicionar ou remover do carrinho.
+- [src/screens/ProductDetails.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/screens/ProductDetails.js): o arquivo que contem mais detalhes do produto selecionado com os botões para adicionar ou remover do carrinho.
 - [src/screens/CartScreen.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/screens/CartScreen.js): o arquivo que define a tela do carrinho, com a lista de produtos no carrinho e o valor total da compra.
 - [src/components/ProductItem.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/components/ProductItem.js): o arquivo que define o componente de um produto, com o nome, a imagem= e preço.
 - [src/components/CartItem.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/components/CartItem.js): o arquivo que define o componente de um item no carrinho, com o nome, a imagem, o preço, a quantidade e o subtotal.
