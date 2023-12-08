@@ -1,14 +1,39 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 
-const ProductItem = ({ product }) => {
-  return (
+const ProductItem = ({ product, onSelectProduct }) => (
+  <TouchableOpacity onPress={onSelectProduct} style={styles.container} activeOpacity={0.8}>
     <View>
-      <Image source={{ uri: product.image }} style={{ width: 100, height: 100 }} />
-      <Text>{product.name}</Text>
-      <Text>{product.price}</Text>
+      <Image source={{ uri: product.image }} style={styles.image} />
+      <Text style={styles.name}>{product.name}</Text>
+      <Text style={styles.price}>{product.price}</Text>
     </View>
-  );
-};
+  </TouchableOpacity>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    marginVertical: 10,
+    paddingHorizontal: 10,
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    elevation: 2,
+  },
+  image: {
+    width: '100%',
+    aspectRatio: 1,
+    borderRadius: 5,
+  },
+  name: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginTop: 5,
+  },
+  price: {
+    fontSize: 14,
+    color: '#888',
+    marginTop: 2,
+  },
+});
 
 export default ProductItem;
