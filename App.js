@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     color: '#000', // Cor do texto do título do cabeçalho
   },
   cartIcon: {
-    marginRight: 10,
+    marginRight: 15,
   },
 });
 

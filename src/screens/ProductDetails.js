@@ -10,7 +10,7 @@ const ProductDetails = ({ route }) => {
     <View style={styles.container}>
       <Image source={{ uri: product.image }} style={styles.image} />
       <Text style={styles.name}>{product.name}</Text>
-      <Text style={styles.price}>{product.price}</Text>
+      <Text style={styles.price}>{product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</Text>
       <Button title="Add to Cart" onPress={() => addToCart(product)} />
     </View>
   );
@@ -20,12 +20,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
   },
   image: {
     width: '100%',
     aspectRatio: 1,
     marginBottom: 10,
+    padding: 16,
   },
   name: {
     fontSize: 18,
