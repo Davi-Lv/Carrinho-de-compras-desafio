@@ -8,8 +8,8 @@ const CartItem = ({ product }) => {
       <Image source={{ uri: product.image }} style={styles.image} />
       <View style={styles.detailsContainer}>
         <Text style={styles.name}>{product.name}</Text>
-        <Text style={styles.price}>Price: ${product.price}</Text>
-        <Text style={styles.quantity}>Quantity: {product.quantity}</Text>
+        <Text style={styles.price}>Preço: ${product.price}</Text>
+        <Text style={styles.quantity}>Quantidade: {product.quantity}</Text>
         <Text style={styles.subtotal}>Subtotal: ${product.subtotal}</Text>
       </View>
     </View>

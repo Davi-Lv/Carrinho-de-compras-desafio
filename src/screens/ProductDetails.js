@@ -11,7 +11,7 @@ const ProductDetails = ({ route }) => {
       <Image source={{ uri: product.image }} style={styles.image} />
       <Text style={styles.name}>{product.name}</Text>
       <Text style={styles.price}>{product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</Text>
-      <Button title="Add to Cart" onPress={() => addToCart(product)} />
+      <Button title="Adicionar ao carrinho" onPress={() => addToCart(product)} />
     </View>
   );
 };

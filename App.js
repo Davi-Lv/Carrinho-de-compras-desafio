@@ -35,24 +35,27 @@ function App() {
             component={ProductsScreen}
             options={{
               headerRight: () => <CartButton />,
-              headerStyle: styles.headerStyle, // Adicionando estilo personalizado para o cabeçalho
-              headerTitleStyle: styles.headerTitleStyle, // Adicionando estilo personalizado para o título do cabeçalho
+              headerStyle: styles.headerStyle,
+              headerTitleStyle: styles.headerTitleStyle,
+              headerTitle: 'Produtos',
             }}
           />
           <Stack.Screen
             name="ProductDetails"
             component={ProductDetails}
             options={{
-              headerStyle: styles.headerStyle, // Adicionando estilo personalizado para o cabeçalho
-              headerTitleStyle: styles.headerTitleStyle, // Adicionando estilo personalizado para o título do cabeçalho
+              headerStyle: styles.headerStyle,
+              headerTitleStyle: styles.headerTitleStyle,
+              headerTitle: 'Detalhes do produto',
             }}
           />
           <Stack.Screen
             name="Cart"
             component={CartScreen}
             options={{
-              headerStyle: styles.headerStyle, // Adicionando estilo personalizado para o cabeçalho
-              headerTitleStyle: styles.headerTitleStyle, // Adicionando estilo personalizado para o título do cabeçalho
+              headerStyle: styles.headerStyle,
+              headerTitleStyle: styles.headerTitleStyle,
+              headerTitle: 'Carrinho'
             }}
           />
         </Stack.Navigator>
