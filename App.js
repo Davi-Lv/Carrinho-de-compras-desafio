@@ -8,6 +8,7 @@ import ProductDetails from './src/screens/ProductDetails.js';
 import CartScreen from './src/screens/CartScreen.js';
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
+import Footer from './src/components/Footer.js';
 
 const Stack = createStackNavigator();
 
@@ -29,47 +30,50 @@ function App() {
   return (
     <ProductsContextProvider>
       <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen
-            name="Products"
-            component={ProductsScreen}
-            options={{
-              headerRight: () => <CartButton />,
-              headerStyle: styles.headerStyle,
-              headerTitleStyle: styles.headerTitleStyle,
-              headerTitle: 'Produtos',
-            }}
-          />
-          <Stack.Screen
-            name="ProductDetails"
-            component={ProductDetails}
-            options={{
-              headerStyle: styles.headerStyle,
-              headerTitleStyle: styles.headerTitleStyle,
-              headerTitle: 'Detalhes do produto',
-            }}
-          />
-          <Stack.Screen
-            name="Cart"
-            component={CartScreen}
-            options={{
-              headerStyle: styles.headerStyle,
-              headerTitleStyle: styles.headerTitleStyle,
-              headerTitle: 'Carrinho'
-            }}
-          />
-        </Stack.Navigator>
+        <View style={{ flex: 1 }}>
+
+          <Stack.Navigator>
+            <Stack.Screen
+              name="Products"
+              component={ProductsScreen}
+              options={{
+                headerRight: () => <CartButton />,
+                headerStyle: styles.headerStyle,
+                headerTitleStyle: styles.headerTitleStyle,
+                headerTitle: 'Produtos',
+              }}
+            />
+            <Stack.Screen
+              name="ProductDetails"
+              component={ProductDetails}
+              options={{
+                headerStyle: styles.headerStyle,
+                headerTitleStyle: styles.headerTitleStyle,
+                headerTitle: 'Detalhes do produto',
+              }}
+            />
+            <Stack.Screen
+              name="Cart"
+              component={CartScreen}
+              options={{
+                headerStyle: styles.headerStyle,
+                headerTitleStyle: styles.headerTitleStyle,
+                headerTitle: 'Carrinho'
+              }}
+            />
+          </Stack.Navigator>
+          <Footer />
+        </View>
       </NavigationContainer>
     </ProductsContextProvider>
   );
 }
-
 const styles = StyleSheet.create({
   headerStyle: {
-    backgroundColor: '#f5f5f5', // Cor de fundo do cabeçalho
+    backgroundColor: '#f5f5f5',
   },
   headerTitleStyle: {
-    color: '#000', // Cor do texto do título do cabeçalho
+    color: '#000',
   },
   cartIcon: {
     marginRight: 15,
