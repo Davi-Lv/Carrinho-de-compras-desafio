@@ -19,15 +19,11 @@ const ProductsScreen = ({ navigation }) => {
 
   return (
     <>
-      <View>
-        <Text>Food Delivery</Text>
-        <Text>Restaurent</Text>
-      </View>
       <Tab
         disableIndicator
         value={index}
         onChange={(e) => setIndex(e)}
-         variant="default"
+        variant="default"
       >
         <Tab.Item
           title="Burger"
@@ -46,10 +42,13 @@ const ProductsScreen = ({ navigation }) => {
           titleStyle={styles.tabItem}
         />
       </Tab>
-
+      <View style={styles.foodAndRestaurant}>
+        <Text style={styles.tituloFood}>Food Delivery</Text>
+        <Text>Restaurent</Text>
+      </View>
       <TabView value={index} onChange={setIndex} animationType="spring">
-        <TabView.Item style={{ width: '100%' }}>
-          <ScrollView style={styles.container}>
+        <TabView.Item style={styles.AllProducts}>
+          <ScrollView>
             <FlatList
               data={products}
               renderItem={renderItem}
@@ -84,6 +83,16 @@ const styles = StyleSheet.create({
     padding: "6px 17px",
     backgroundColor: "#8289c4",
     borderRadius: ".5rem",
+  },
+  tituloFood: {
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  foodAndRestaurant: {
+    padding: 16,
+  },
+  AllProducts: {
+    width: '100%'
   },
 });
 
