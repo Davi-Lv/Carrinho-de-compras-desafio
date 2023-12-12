@@ -31,7 +31,6 @@ function App() {
     <ProductsContextProvider>
       <NavigationContainer>
         <View style={{ flex: 1 }}>
-
           <Stack.Navigator>
             <Stack.Screen
               name="Products"

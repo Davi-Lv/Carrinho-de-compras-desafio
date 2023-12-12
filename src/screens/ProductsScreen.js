@@ -26,7 +26,7 @@ const ProductsScreen = ({ navigation }) => {
         variant="default"
       >
         <Tab.Item
-          title="Burger"
+          title="todos"
           titleStyle={styles.tabItem}
         />
         <Tab.Item
@@ -34,7 +34,7 @@ const ProductsScreen = ({ navigation }) => {
           titleStyle={styles.tabItem}
         />
         <Tab.Item
-          title="Pasta"
+          title="Burger"
           titleStyle={styles.tabItem}
         />
         <Tab.Item
@@ -48,22 +48,33 @@ const ProductsScreen = ({ navigation }) => {
       </View>
       <TabView value={index} onChange={setIndex} animationType="spring">
         <TabView.Item style={styles.AllProducts}>
-          <ScrollView>
-            <FlatList
-              data={products}
-              renderItem={renderItem}
-              keyExtractor={item => item.id.toString()}
-            />
-          </ScrollView>
+          <FlatList
+            data={products}
+            renderItem={renderItem}
+            keyExtractor={item => item.id.toString()}
+          />
         </TabView.Item>
-        <TabView.Item style={{ backgroundColor: 'blue', width: '100%' }}>
-          <Text h1>Favorite</Text>
+        <TabView.Item style={{ width: '100%' }}>
+          <FlatList
+            data={products.filter(item => item.type === 'pizza')}
+            renderItem={renderItem}
+            keyExtractor={item => item.id.toString()}
+          />
         </TabView.Item>
-        <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>
-          <Text h1>Cart</Text>
+        <TabView.Item style={{ width: '100%' }}>
+          <FlatList
+            data={products.filter(item => item.type === 'hamburguer')}
+            renderItem={renderItem}
+            keyExtractor={item => item.id.toString()}
+          />
         </TabView.Item>
-        <TabView.Item style={{ backgroundColor: 'pink', width: '100%' }}>
-          <Text h1>popular</Text>
+
+        <TabView.Item style={{ width: '100%' }}>
+          <FlatList
+            data={products}
+            renderItem={renderItem}
+            keyExtractor={item => item.id.toString()}
+          />
         </TabView.Item>
       </TabView>
     </>

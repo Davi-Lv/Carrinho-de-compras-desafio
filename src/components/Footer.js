@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: "1.2rem",
+    padding: "1.5rem",
     flexDirection: 'row',
   },
 });
