@@ -70,3 +70,11 @@ Para mais detalhes sobre o projeto, consulte os seguintes arquivos e páginas:
 - [src/components/CartItem.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/components/CartItem.js): o arquivo que define o componente de um item no carrinho, com o nome, a imagem, o preço, a quantidade e o subtotal.
 - [src/data/products.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/data/products.js): o arquivo que contém o array com os dados dos produtos, como o id, o nome, a imagem e preço.
 - [src/styles/styles.js](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/blob/main/src/styles/styles.js): o arquivo que contém os estilos globais do aplicativo, como as cores, as fontes e as dimensões.
+
+## imagens das telas (desafio finalizado):
+
+![image1](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/assets/85120918/8470b73c-3f1e-451c-92f1-0ed3cdeabf5e)
+![image2](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/assets/85120918/0f65b6c8-f961-4c12-a369-5802bae5f0b5)
+![image3](https://github.com/Davi-Lv/Carrinho-de-compras-desafio/assets/85120918/a5e45351-1dc5-4404-b5e8-882468075c02)
+
+
